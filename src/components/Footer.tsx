@@ -9,10 +9,17 @@ export const Footer = () => (
         </div>
 
         <div className="flex items-center gap-6 text-sm text-gray-600">
-          <Link to="/terms" className="hover:text-fastport-primary transition-colors">Terms of Service</Link>
-          <Link to="/privacy" className="hover:text-gray-900 transition-colors">Privacy Policy</Link>
-          <a href="mailto:hello@fastportid.com" className="hover:text-gray-900 transition-colors">Contact</a>
+          <a href="https://ferncliffpartners.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-fastport-primary transition-colors">Terms of Service</a>
+          <a href="https://ferncliffpartners.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
+          <a href="https://ferncliffpartners.com/contact" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">Contact</a>
         </div>
+      </div>
+
+      <div className="text-center text-sm text-gray-600 mt-6">
+        Explore all Ferncliff products →{" "}
+        <a href="https://ferncliffpartners.com/projects" target="_blank" rel="noopener noreferrer" className="text-fastport-primary hover:underline">
+          ferncliffpartners.com/projects
+        </a>
       </div>
 
       <div className="text-center text-xs text-gray-500 mt-4">
