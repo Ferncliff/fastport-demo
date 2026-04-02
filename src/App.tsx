@@ -2,11 +2,12 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import EmployerDashboard from './pages/EmployerDashboard'
 import CandidatePortal from './pages/CandidatePortal'
 import Home from './pages/Home'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50 flex flex-col">
         <nav className="bg-white shadow-sm border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center">
@@ -31,13 +32,15 @@ function App() {
           </div>
         </nav>
 
-        <main>
+        <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/employer" element={<EmployerDashboard />} />
             <Route path="/candidate" element={<CandidatePortal />} />
           </Routes>
         </main>
+
+        <Footer />
       </div>
     </BrowserRouter>
   )
