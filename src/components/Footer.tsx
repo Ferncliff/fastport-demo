@@ -23,7 +23,7 @@ export const Footer = () => (
       </div>
 
       <div className="text-center text-xs text-gray-500 mt-4">
-        © 2026 FastPortID. A Ferncliff Partners product.
+        © 2026 FastPortID. A <a href="https://ferncliffpartners.com/projects" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 underline">Ferncliff Partners</a> product.
       </div>
     </div>
   </footer>
